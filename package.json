@@ -1,0 +1,34 @@
+{
+  "name": "emploeur",
+  "version": "1.0.0",
+  "description": "Backend service for emploeur application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon --exec babel-node app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Deltafolks",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@blueprintjs/select": "^3.11.2",
+    "apollo-server-express": "^2.9.16",
+    "concurrently": "^5.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "graphql-tools": "^4.0.6",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.1.0",
+    "react-apollo": "^3.1.3",
+    "sequelize": "^5.21.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
