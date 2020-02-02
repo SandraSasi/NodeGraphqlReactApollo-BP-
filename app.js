@@ -23,5 +23,3 @@ models.sequelize.sync().then(async () => {
     console.log(`Apollo Server on http://localhost:${port}/graphql`);
   });
 });
-// app.listen(4000);
-// console.log(`🚀 Server ready at http://localhost:4000`);
