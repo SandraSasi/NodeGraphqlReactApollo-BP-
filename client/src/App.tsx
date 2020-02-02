@@ -19,7 +19,7 @@ const App: React.FC = () => {
       <div>
         <NavbarComponent />
         <Sidebar />
-        <User />
+        <ApartmentContainer />
       </div>
     </ApolloProvider>
   );

@@ -4,7 +4,7 @@ module.exports = function() {
   var express = require("express");
   var port = process.env.PORT || 5000;
 
-  var root = { hello: () => "Hello world!" };
+  var root = { hello: () => "Hello world, have a nice day!" };
   var cors = require("cors");
   var app = express();
   app.use(cors());
@@ -16,5 +16,5 @@ module.exports = function() {
     })
   );
   app.listen(port);
-  console.log(`You are listening to port ${port}`);
+  console.log(`You are listening to ${port} port`);
 };
